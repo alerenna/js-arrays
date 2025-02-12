@@ -13,24 +13,21 @@ const teachers = [
 const reversedTeachers = teachers.reverse();
 console.log(reversedTeachers);
 
-
 // 2. Crea un nuovo array chiamato 'longNames' che contenga solo gli insegnanti
 // con un nome di lunghezza maggiore o uguale a 5 caratteri
 
-/* const longNames = []
+const longNames = []
 
 for (let index = 0; index < teachers.length; index++) {
   const thisName = teachers[index];
 
-  if (teachers.length >= 5) {
-    teachers.unshift(longNames)
+  if (thisName.length >= 5) {
+    longNames.unshift(thisName)
   }
   
 }
 
-console.log(longNames); */
-
-
+console.log(longNames);
 
 // 3. Rimuovi 'Ed' dall'array teachers
 teachers.splice(5,1)
@@ -50,3 +47,4 @@ if (isFabioPresent == true) {
 // 5. Unisci tutti gli insegnanti nell'array teachers in una stringa separata da virgole e salvala nella variabile teachersString
 const teachersString = teachers.join(', ');
 console.log(teachersString);
+
